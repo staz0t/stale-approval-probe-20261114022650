@@ -30,7 +30,6 @@ def handle(request):
         audit(request)
         prepare(request)
         validate(request)
-        require_admin()
         render(request)
         finish(request)
         return
