@@ -40,4 +40,5 @@ def guarded(request):
     allowed = True
     if not is_admin(request):
         allowed = False
+    log("denied")
     return allowed
